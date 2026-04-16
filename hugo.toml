@@ -1,0 +1,13 @@
+baseURL = 'https://sneha-tech-blog.pages.dev/'
+languageCode = 'en-us'
+title = 'Technical Documentation & Systems'
+theme = 'PaperMod'
+
+# This ensures your homepage is a list of your posts, nothing else.
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[params]
+    # This disables the "Profile Mode" that usually contains bio data
+    showFullTextContent = false
+    displayFullPostContent = false
