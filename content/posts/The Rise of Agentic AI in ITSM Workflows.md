@@ -1,0 +1,62 @@
+---
+title: "The Rise of Agentic AI in ITSM Workflows"
+date: 2026-04-17
+draft: false
+description: "Moving beyond chatbots to autonomous agents: How Agentic AI is transforming incident management and service delivery."
+tags: ["AI", "ITSM", "Automation", "SymphonyAI"]
+categories: ["Tech Trends"]
+showToc: true
+weight: 1
+---
+
+## From Generative to Agentic: The New Frontier
+
+In the past few years, IT Service Management (ITSM) has been dominated by **Generative AI**—tools that summarize tickets, suggest knowledge base articles, or power simple chatbots. While useful, these tools still require a human "in the loop" to execute every actual task.
+
+Enter **Agentic AI**.
+
+Unlike standard LLMs that simply predict the next word, Agentic AI is designed to **act**. In an ITSM context, this means moving from an assistant that *tells* you how to fix a server to an agent that *executes* the fix, verifies the resolution, and closes the ticket autonomously.
+
+---
+
+## How Agentic AI Differs from Traditional Automation
+
+Traditional ITSM automation (like standard workflow engines) is rigid. It follows "If-This-Then-That" logic. If a scenario falls outside the predefined script, the automation breaks.
+
+**Agentic AI** operates on reasoning. It can:
+1. **Analyze Context:** Understand the nuance of a complex, multi-layered ticket.
+2. **Plan:** Determine which tools (APIs, PowerShell scripts, Database queries) are needed to solve the issue.
+3. **Self-Correct:** If a specific action fails, the agent can pivot and try an alternative path without manual intervention.
+
+---
+
+## Core Use Cases in Enterprise Workflows
+
+### 1. Autonomous Incident Resolution
+Imagine a P2 incident regarding an application slowdown. An AI Agent can independently:
+* Query monitoring tools (like Datadog or AppDynamics).
+* Identify a memory leak in a specific container.
+* Initiate a rolling restart of the service.
+* Monitor the health for 10 minutes post-fix before notifying the human admin.
+
+### 2. Intelligent IT Asset Management (ITAM)
+Agentic AI can bridge the gap between ITSM and ITAM. It can proactively identify shadow IT by scanning network logs and automatically initiate procurement or decommissioning workflows based on organizational policy.
+
+### 3. API-First Documentation
+As a Technical Writer, the shift to Agentic AI changes how we document. We are no longer just writing for humans; we are writing **machine-readable documentation**. For an agent to use a tool, it needs high-precision API references and structured data schemas.
+
+---
+
+## The "Human-in-the-Loop" Evolution
+
+The rise of Agentic AI does not replace the Service Desk Analyst; it upgrades them to an **Orchestrator**. 
+
+Instead of manual data entry and repetitive troubleshooting, humans will focus on defining the "Guardrails" and "Policies" that govern how these agents behave. This shift reduces the Mean Time to Resolve (MTTR) from hours to seconds.
+
+---
+
+## Conclusion
+
+The transition to Agentic AI is the most significant shift in ITSM since the cloud. By integrating these autonomous agents into our ticketing tools, we are not just making workflows faster—we are making them smarter.
+
+*What are your thoughts on giving AI "write access" to your infrastructure? Let's discuss in the comments.*

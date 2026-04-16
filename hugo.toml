@@ -2,12 +2,20 @@ baseURL = 'https://sneha-tech-blog.pages.dev/'
 languageCode = 'en-us'
 title = 'Technical Documentation & Systems'
 theme = 'PaperMod'
+metadataFormat = "yaml"
 
 # This ensures your homepage is a list of your posts, nothing else.
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
 [params]
+# It tells Hugo to look at the root of the content folder for your files
+    mainSections = ["posts"]
     # This disables the "Profile Mode" that usually contains bio data
     showFullTextContent = false
     displayFullPostContent = false
+
+[permalinks]
+    # This makes your link: sneha-tech-blog.pages.dev/my-article/
+    # Instead of: sneha-tech-blog.pages.dev/posts/my-article/
+    posts = '/:title/'

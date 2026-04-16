@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Infrastructure on Technical Documentation &amp; Systems</title>
+    <link>http://localhost:1313/tags/infrastructure/</link>
+    <description>Recent content in Infrastructure on Technical Documentation &amp; Systems</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IT Asset Management: Lifecycle Best Practices</title>
+      <link>http://localhost:1313/it-asset-management-lifecycle-best-practices/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it-asset-management-lifecycle-best-practices/</guid>
+      <description>A deep dive into managing hardware and software lifecycles in enterprise environments.</description>
+    </item>
+    <item>
+      <title>IT Asset Management: Lifecycle Best Practices</title>
+      <link>http://localhost:1313/it-asset-management-lifecycle-best-practices/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it-asset-management-lifecycle-best-practices/</guid>
+      <description>A deep dive into managing hardware and software lifecycles in enterprise environments.</description>
+    </item>
+  </channel>
+</rss>
