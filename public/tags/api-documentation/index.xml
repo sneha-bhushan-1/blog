@@ -6,12 +6,12 @@
     <description>Recent content in API Documentation on Technical Documentation &amp; Systems</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/api-documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Architecting Enterprise API Documentation: A Docs-as-Code Approach</title>
       <link>http://localhost:1313/architecting-enterprise-api-documentation-a-docs-as-code-approach/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/architecting-enterprise-api-documentation-a-docs-as-code-approach/</guid>
       <description>How to build scalable, machine-readable, and developer-friendly API references for enterprise SaaS.</description>
     </item>
