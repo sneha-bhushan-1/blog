@@ -1,6 +1,6 @@
 ---
 title: "Microcopy: The Silent Bridge Between UI/UX and Documentation"
-date: 2026-04-17
+date: 2026-04-16
 draft: false
 description: "Why every word in your interface matters—from button labels to error messages."
 tags: ["UI/UX", "Technical Writing", "Microcopy", "Product Design"]
