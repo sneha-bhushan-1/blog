@@ -1,6 +1,6 @@
 ---
 title: "Architecting Enterprise API Documentation: A Docs-as-Code Approach"
-date: 2026-04-15
+date: 2026-02-14
 draft: false
 description: "How to build scalable, machine-readable, and developer-friendly API references for enterprise SaaS."
 tags: ["API Documentation", "Docs-as-Code", "OpenAPI", "SaaS"]
