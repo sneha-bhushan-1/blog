@@ -1,6 +1,6 @@
 ---
 title: "The Rise of Agentic AI in ITSM Workflows"
-date: 2026-04-16
+date: 2026-04-15
 draft: false
 description: "Moving beyond chatbots to autonomous agents: How Agentic AI is transforming incident management and service delivery."
 tags: ["AI", "ITSM", "Automation", "SymphonyAI"]
