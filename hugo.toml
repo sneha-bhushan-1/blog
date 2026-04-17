@@ -1,7 +1,7 @@
 baseURL = 'https://sneha-tech-blog.pages.dev/'
 languageCode = 'en-us'
-title = 'Technical Documentation & Systems'
-theme = 'PaperMod'
+title = 'Sneha's Tech Blog'
+theme = ["github.com/adityatelange/hugo-PaperMod"]
 metadataFormat = "yaml"
 copyright = "© 2026 Sneha Bhushan"
 
@@ -16,6 +16,8 @@ copyright = "© 2026 Sneha Bhushan"
     showFullTextContent = false
     displayFullPostContent = false
     hideFooter = true
+    defaultTheme = "dark"
+    disableThemeToggle = false
 
 [permalinks]
     # This makes your link: sneha-tech-blog.pages.dev/my-article/
