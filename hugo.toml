@@ -1,6 +1,6 @@
 baseURL = 'https://sneha-tech-blog.pages.dev/'
 languageCode = 'en-us'
-title = 'Sneha's Tech Blog'
+title = "Sneha's Tech Blog"
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 metadataFormat = "yaml"
 copyright = "© 2026 Sneha Bhushan"
