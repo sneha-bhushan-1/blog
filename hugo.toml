@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Technical Documentation & Systems'
 theme = 'PaperMod'
 metadataFormat = "yaml"
+copyright = "© 2026 Sneha Bhushan"
 
 # This ensures your homepage is a list of your posts, nothing else.
 [outputs]
@@ -14,8 +15,11 @@ metadataFormat = "yaml"
     # This disables the "Profile Mode" that usually contains bio data
     showFullTextContent = false
     displayFullPostContent = false
+    hideFooter = true
 
 [permalinks]
     # This makes your link: sneha-tech-blog.pages.dev/my-article/
     # Instead of: sneha-tech-blog.pages.dev/posts/my-article/
     posts = '/:title/'
+
+
