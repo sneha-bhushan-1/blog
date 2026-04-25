@@ -43,7 +43,7 @@
                     <h3 class="text-xl font-black text-neutral-900 dark:text-white">Join the discussion</h3>
                 </div>
 
-                <form id="comment-form" action="https://formsubmit.co/sneha.shree@hotmail.com" method="POST" class="grid grid-cols-1 gap-4">
+                <form id="comment-form" data-mask="{{ .Site.Params.contactEmail | base64Encode }}" method="POST" class="grid grid-cols-1 gap-4">
                     <input type="hidden" name="_subject" value="New Insight: {{ .Title }}">
                     <input type="hidden" name="_template" value="box">
                     <input type="hidden" name="_captcha" value="false">
@@ -66,8 +66,11 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
+        const getEmail = () => atob(document.getElementById('comment-form').dataset.mask);
+
         const sendFeedback = async (type) => {
-            const url = "https://formsubmit.co/ajax/sneha.shree@hotmail.com";
+            const email = getEmail();
+            const url = `https://formsubmit.co/ajax/${email}`;
             const payload = {
                 _subject: `New Insight: ${type} on {{ .Title }}`,
                 message: `Feedback: ${type}\nArticle: {{ .Permalink }}`
@@ -107,8 +110,11 @@
             submitBtn.classList.add('opacity-70');
 
             const data = new FormData(form);
+            const email = getEmail();
+            const actionUrl = `https://formsubmit.co/ajax/${email}`;
+
             try {
-                const resp = await fetch(form.action.replace('/sneha.shree@hotmail.com','/ajax/sneha.shree@hotmail.com'), {
+                const resp = await fetch(actionUrl, {
                     method: 'POST',
                     body: data,
                     headers: { 'Accept': 'application/json' }
