@@ -1,0 +1,22 @@
+locale = "en"
+label = "English"
+weight = 1
+title = "Sneha's Tech Blog"
+
+[params]
+displayName = "English"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+description = "Exploring the intersection of technology, AI, and documentation."
+copyright = "© 2026 Sneha Bhushan"
+
+[params.author]
+name = "Sneha Bhushan"
+headline = "Tech Enthusiast & Documentation Expert"
+bio = "Sharing insights on Agentic AI, API documentation, and modern UX."
+# image = "img/author.png" # You can add an author image later
+links = [
+    { github = "https://github.com/sneha-bhushan-1" },
+    { share = "#" }
+]

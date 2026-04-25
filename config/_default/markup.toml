@@ -1,0 +1,6 @@
+[goldmark]
+  [goldmark.renderer]
+    unsafe = true # Allows HTML in Markdown
+[highlight]
+  noClasses = false
+  style = "github-dark"

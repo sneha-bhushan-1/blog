@@ -1,0 +1,16 @@
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const shareLinks = document.querySelectorAll('a[href="#"]');
+        shareLinks.forEach(link => {
+            if (link.querySelector('svg') && link.innerHTML.includes('share')) {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const url = window.location.href;
+                    navigator.clipboard.writeText(url).then(() => {
+                        alert("Link copied to clipboard!");
+                    });
+                });
+            }
+        });
+    });
+</script>

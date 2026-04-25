@@ -1,0 +1,18 @@
+baseURL = "https://sneha-tech-blog.pages.dev/"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+enableEmoji = true
+
+[pagination]
+pagerSize = 10
+
+[taxonomies]
+category = "categories"
+author = "authors"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+posts = "/:title/"

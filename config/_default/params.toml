@@ -1,0 +1,30 @@
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+
+[header]
+layout = "fixed"
+
+[footer]
+showMenu = true
+showCopyright = true
+showThemeAttribution = false # Clean look
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "profile" # Shows author bio and recent posts
+showRecent = true
+cardView = true
+
+[article]
+showDate = true
+showAuthor = true
+showReadingTime = true
+showTags = false
+showComments = true
+showWordCount = false
+showEdit = false
+showTableOfContents = true
