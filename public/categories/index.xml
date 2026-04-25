@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Sneha&#39;s Tech Blog</title>
-    <link>http://localhost:1356/categories/</link>
+    <link>http://localhost:1360/categories/</link>
     <description>Recent content in Categories on Sneha&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Sneha Bhushan</copyright>
-    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1356/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1360/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tech Trends</title>
-      <link>http://localhost:1356/categories/tech-trends/</link>
+      <link>http://localhost:1360/categories/tech-trends/</link>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1356/categories/tech-trends/</guid>
+      <guid>http://localhost:1360/categories/tech-trends/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Design</title>
-      <link>http://localhost:1356/categories/design/</link>
+      <link>http://localhost:1360/categories/design/</link>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1356/categories/design/</guid>
+      <guid>http://localhost:1360/categories/design/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Technical Writing</title>
-      <link>http://localhost:1356/categories/technical-writing/</link>
+      <link>http://localhost:1360/categories/technical-writing/</link>
       <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1356/categories/technical-writing/</guid>
+      <guid>http://localhost:1360/categories/technical-writing/</guid>
       <description></description>
       
     </item>

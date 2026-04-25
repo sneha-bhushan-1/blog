@@ -19,13 +19,25 @@
     }
 
     /* AI Style Change 7: Add top padding to the feedback heading */
-    .ai-style-change-7.text-white {
+    .ai-style-change-7 {
         padding-top: 1.5rem !important;
     }
 
     /* Override specific Tailwind min-height constraints */
     .min-h-\[148px\] {
         min-height: 100px !important;
+    }
+
+    /* Forced Dark Mode Compliance */
+    .dark #feedback-section-container,
+    .dark #discussion-section-container {
+        background-color: #171717 !important;
+        border-color: #404040 !important;
+    }
+
+    .dark #feedback-heading,
+    .dark #discussion-heading {
+        color: #ffffff !important;
     }
     
     @media (min-width: 768px) {
