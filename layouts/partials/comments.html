@@ -1,13 +1,13 @@
-<section class="relative mt-40 mb-20 px-6">
+<section class="relative mt-80 mb-20 px-6">
     <div class="max-w-4xl mx-auto">
         <!-- Feedback: boxed container matching provided design -->
         <div class="mb-12 mx-auto" style="max-width:820px;">
             <div class="bg-neutral-900/90 border border-neutral-600/30 rounded-sm p-8 text-center">
-                <h3 class="text-lg font-black text-white">Was this article helpful?</h3>
+                <h3 class="text-lg font-black text-white ai-style-change-7">Was this article helpful?</h3>
                 <p class="text-sm text-neutral-400 mt-3">Your feedback helps me create better content for you.</p>
 
                 <div class="mt-8 w-full flex justify-center">
-                    <div class="flex items-center gap-6 sm:gap-12 md:gap-20 justify-center w-full max-w-[240px]">
+                    <div class="flex items-center gap-6 sm:gap-12 md:gap-20 justify-center w-full max-w-[240px] ai-style-change-1">
                         <button id="like-btn" aria-pressed="false" class="group relative w-16 h-16 rounded-lg bg-neutral-800/60 border border-neutral-700 flex items-center justify-center transition-transform hover:scale-105">
                             <span class="text-2xl">🚀</span>
                         </button>
@@ -75,10 +75,8 @@
 
             try {
                 const successEl = document.getElementById("feedback-success");
-                // show polished success card
+                // show success message
                 successEl.classList.remove("hidden");
-                const card = successEl.querySelector("div");
-                setTimeout(() => { card.classList.replace('opacity-0','opacity-100'); card.classList.replace('scale-95','scale-100'); }, 20);
 
                 const buttons = [document.getElementById("like-btn"), document.getElementById("dislike-btn")];
                 buttons.forEach(btn => {
@@ -100,7 +98,7 @@
         document.getElementById("like-btn").addEventListener("click", () => sendFeedback("Insightful (✨)"));
         document.getElementById("dislike-btn").addEventListener("click", () => sendFeedback("Needs Clarity (☁️)"));
 
-        // Handle the main comment form via AJAX and show premium success UI
+        // Handle the main comment form via AJAX
         const form = document.getElementById('comment-form');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -117,10 +115,7 @@
                 });
 
                 if (resp.ok) {
-                    const successEl = document.getElementById('feedback-success');
-                    successEl.classList.remove('hidden');
-                    const card = successEl.querySelector('div');
-                    setTimeout(() => { card.classList.replace('opacity-0','opacity-100'); card.classList.replace('scale-95','scale-100'); }, 20);
+                    alert('Message sent successfully!');
                     form.reset();
                 } else {
                     console.warn('Form send returned non-ok status', resp.status);

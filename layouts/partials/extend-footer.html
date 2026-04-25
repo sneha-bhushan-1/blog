@@ -1,13 +1,95 @@
+<style>
+    /* Eliminated gap: start hero immediately after topbar */
+    main {
+        padding-top: 0 !important;
+    }
+
+    div.overflow-hidden[class*="h-36"], 
+    div.overflow-hidden[class*="h-56"], 
+    div.overflow-hidden[class*="h-72"] {
+        height: 40vh !important;
+        max-height: 600px !important;
+        margin-top: 0 !important; /* Zero gap */
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* AI Style Change 1: Force consistent gap when centered */
+    .ai-style-change-1.justify-center {
+        gap: 20px !important;
+    }
+
+    /* AI Style Change 7: Add top padding to the feedback heading */
+    .ai-style-change-7.text-white {
+        padding-top: 1.5rem !important;
+    }
+    
+    @media (min-width: 768px) {
+        div.overflow-hidden[class*="h-36"], 
+        div.overflow-hidden[class*="h-56"], 
+        div.overflow-hidden[class*="h-72"] {
+            height: 50vh !important;
+            max-height: 800px !important;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        div.overflow-hidden[class*="h-36"], 
+        div.overflow-hidden[class*="h-56"], 
+        div.overflow-hidden[class*="h-72"] {
+            height: 60vh !important;
+            max-height: 1000px !important;
+        }
+    }
+
+    /* Ensure the image within covers the container perfectly */
+    div.overflow-hidden[class*="h-"] img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+        object-position: center 25% !important; /* Focus on the command center area */
+    }
+</style>
+
 <script>
     document.addEventListener("DOMContentLoaded", () => {
+        const toast = document.createElement('div');
+        toast.className = 'fixed z-[9999] flex items-center justify-center px-4 py-2 bg-neutral-900/98 backdrop-blur-2xl border border-neutral-700/50 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-2xl opacity-0 transition-all duration-300 pointer-events-none whitespace-nowrap text-center min-w-[180px]';
+        toast.style.visibility = 'hidden';
+        toast.innerHTML = '<div class="flex items-center justify-center gap-3 w-full"><span class="w-1.5 h-1.5 bg-violet-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)]"></span><span style="flex: 1; text-align: center;">Link Copied to Clipboard</span></div>';
+        document.body.appendChild(toast);
+
+        const showToast = (btn) => {
+            const rect = btn.getBoundingClientRect();
+            
+            // Absolute centering logic
+            toast.style.visibility = 'visible';
+            toast.style.top = `${rect.bottom + 12}px`;
+            toast.style.left = `${rect.left + (rect.width / 2)}px`;
+            toast.style.transform = 'translateX(-50%) translateY(-5px)';
+            toast.style.opacity = '1';
+            
+            // Animation: Slide into place
+            requestAnimationFrame(() => {
+                toast.style.transform = 'translateX(-50%) translateY(0)';
+            });
+            
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateX(-50%) translateY(-5px)';
+                setTimeout(() => {
+                    toast.style.visibility = 'hidden';
+                }, 300);
+            }, 2000);
+        };
+
         const shareLinks = document.querySelectorAll('a[href="#"]');
         shareLinks.forEach(link => {
-            if (link.querySelector('svg') && link.innerHTML.includes('share')) {
+            if (link.querySelector('svg') || link.innerHTML.includes('share')) {
                 link.addEventListener("click", (e) => {
                     e.preventDefault();
-                    const url = window.location.href;
+                    const url = window.location.origin + window.location.pathname;
                     navigator.clipboard.writeText(url).then(() => {
-                        alert("Link copied to clipboard!");
+                        showToast(e.currentTarget);
                     });
                 });
             }

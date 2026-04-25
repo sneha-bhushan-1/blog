@@ -6,6 +6,8 @@ description: "Moving beyond chatbots to autonomous agents: How Agentic AI is tra
 tags: ["AI", "ITSM", "Automation"]
 categories: ["Tech Trends"]
 showToc: true
+featureImage: "feature.png"
+showHero: true
 weight: 1
 ---
 

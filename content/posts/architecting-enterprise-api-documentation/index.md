@@ -6,6 +6,8 @@ description: "How to build scalable, machine-readable, and developer-friendly AP
 tags: ["API Documentation", "Docs-as-Code", "OpenAPI", "SaaS"]
 categories: ["Technical Writing"]
 showToc: true
+featureImage: "feature.png"
+showHero: true
 ---
 
 ## The Blueprint for Modern API Docs
