@@ -1,136 +1,72 @@
 <section class="relative mt-80 mb-20 px-6">
     <div class="max-w-4xl mx-auto">
-        <!-- Feedback: boxed container matching provided design -->
+        <!-- Giscus Discussion container -->
         <div class="mb-12 mx-auto" style="max-width:820px;">
-            <div id="feedback-section-container" class="bg-neutral-100 dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded-sm p-8 text-center">
-                <h3 id="feedback-heading" class="text-lg font-black text-neutral-800 dark:text-white ai-style-change-7">Was this article helpful?</h3>
-                <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-3">Your feedback helps me create better content for you.</p>
-
-                <div class="mt-8 w-full flex justify-center">
-                    <div class="flex items-center gap-6 sm:gap-12 md:gap-20 justify-center w-full max-w-[240px] ai-style-change-1">
-                        <button id="like-btn" aria-pressed="false" class="group relative w-16 h-16 rounded-lg bg-neutral-200/60 dark:bg-neutral-800/60 border border-neutral-300 dark:border-neutral-700 flex items-center justify-center transition-transform hover:scale-105">
-                            <span class="text-2xl">🚀</span>
-                        </button>
-                        <button id="dislike-btn" aria-pressed="false" class="group relative w-16 h-16 rounded-lg bg-neutral-200/60 dark:bg-neutral-800/60 border border-neutral-300 dark:border-neutral-700 flex items-center justify-center transition-transform hover:scale-105">
-                            <span class="text-2xl">🤔</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="mt-4 text-xs text-neutral-500 tracking-widest w-full">
-                    <div class="mx-auto max-w-[240px] flex items-center gap-6 sm:gap-12 justify-center">
-                        <span class="w-16 text-center text-neutral-500 dark:text-neutral-400">Helpful!</span>
-                        <span class="w-16 text-center text-neutral-500 dark:text-neutral-400">Not Useful</span>
-                    </div>
-                </div>
-
-                <div id="feedback-success" aria-hidden="true" class="mt-6 hidden">
-                    <div class="inline-flex items-center gap-3 text-sm text-neutral-800 dark:text-white">
-                        <span class="text-2xl">✨</span>
-                        <span class="font-bold">Awesome! Thanks for the feedback.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <!-- Join Discussion box (screenshot match) -->
-        <div class="mb-12 mx-auto" style="max-width:820px;">
-            <div id="discussion-section-container" class="bg-neutral-100 dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded-sm p-6">
-                <div class="flex items-center gap-2 mb-4">
-                    <div class="w-8 h-8 bg-neutral-200 dark:bg-neutral-800/70 rounded-full flex items-center justify-center text-neutral-900 dark:text-white">💬</div>
-                    <h3 id="discussion-heading" class="text-xl font-black text-neutral-900 dark:text-white">Join the discussion</h3>
-                </div>
-
-                <form id="comment-form" data-mask="{{ .Site.Params.contactEmail | base64Encode }}" method="POST" class="grid grid-cols-1 gap-4">
-                    <input type="hidden" name="_subject" value="New Insight: {{ .Title }}">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-
-                    <label class="text-[10px] font-black text-neutral-500 dark:text-neutral-400 mt-4">Full name</label>
-                    <input id="name" name="name" required placeholder="Alex Johnson" style="background-color: white; color: #1f2937;" class="w-full px-4 py-3 rounded-lg border border-neutral-300 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-blue-500">
-
-                    <label class="text-[10px] font-black text-neutral-500 dark:text-neutral-400">Email address</label>
-                    <input id="email" name="email" type="email" required placeholder="alex@example.com" style="background-color: white; color: #1f2937;" class="w-full px-4 py-3 rounded-lg border border-neutral-300 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-blue-500">
-
-                    <label class="text-[10px] font-black text-neutral-500 dark:text-neutral-400">Your message</label>
-                    <textarea id="message" name="message" rows="6" required placeholder="I found the section on Agentic AI particularly interesting..." style="background-color: white; color: #1f2937;" class="w-full px-4 py-4 rounded-lg border border-neutral-300 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
-
-                    <button id="submit-btn" type="submit" style="background-color: #262626; color: white !important;" class="w-full mt-2 border-t border-neutral-300 dark:border-neutral-700 py-4 font-black tracking-wider rounded-b-sm hover:bg-neutral-700 transition-colors">Send message →</button>
-                </form>
-            </div>
+            <div id="giscus-container" class="giscus"></div>
         </div>
     </div>
 </section>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const getEmail = () => atob(document.getElementById('comment-form').dataset.mask);
+        const giscusContainer = document.getElementById("giscus-container");
+        
+        const getTheme = () => {
+            const appearance = localStorage.getItem("appearance") || (document.documentElement.classList.contains("dark") ? "dark" : "light");
+            console.log("Current appearance detected:", appearance);
+            return appearance === "dark" ? "dark" : "light";
+        };
 
-        const sendFeedback = async (type) => {
-            const email = getEmail();
-            const url = `https://formsubmit.co/ajax/${email}`;
-            const payload = {
-                _subject: `New Insight: ${type} on {{ .Title }}`,
-                message: `Feedback: ${type}\nArticle: {{ .Permalink }}`
-            };
+        // --- Giscus Injection ---
+        const giscusScript = document.createElement("script");
+        giscusScript.src = "https://giscus.app/client.js";
+        giscusScript.setAttribute("data-repo", "sneha-bhushan-1/blog");
+        giscusScript.setAttribute("data-repo-id", "R_kgDOSEjt3Q");
+        giscusScript.setAttribute("data-category", "Announcements");
+        giscusScript.setAttribute("data-category-id", "DIC_kwDOSEjt3c4C7sQK");
+        giscusScript.setAttribute("data-mapping", "pathname");
+        giscusScript.setAttribute("data-strict", "0");
+        giscusScript.setAttribute("data-reactions-enabled", "1");
+        giscusScript.setAttribute("data-emit-metadata", "0");
+        giscusScript.setAttribute("data-input-position", "bottom");
+        giscusScript.setAttribute("data-theme", getTheme());
+        giscusScript.setAttribute("data-lang", "en");
+        giscusScript.crossOrigin = "anonymous";
+        giscusScript.async = true;
+        
+        giscusContainer.appendChild(giscusScript);
 
-            try {
-                const successEl = document.getElementById("feedback-success");
-                // show success message
-                successEl.classList.remove("hidden");
-
-                const buttons = [document.getElementById("like-btn"), document.getElementById("dislike-btn")];
-                buttons.forEach(btn => {
-                    btn.style.opacity = "0.12";
-                    btn.disabled = true;
-                    btn.setAttribute('aria-pressed','true');
-                });
-
-                await fetch(url, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json", "Accept": "application/json" },
-                    body: JSON.stringify(payload)
-                });
-            } catch (err) {
-                console.error("Signal broadcast failed:", err);
+        // --- Dynamic Theme Switching ---
+        const updateGiscusTheme = () => {
+            const theme = getTheme();
+            console.log("Updating Giscus theme to:", theme);
+            const iframe = document.querySelector("iframe.giscus-frame");
+            if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme: theme } } },
+                    "https://giscus.app"
+                );
             }
         };
 
-        document.getElementById("like-btn").addEventListener("click", () => sendFeedback("Insightful (✨)"));
-        document.getElementById("dislike-btn").addEventListener("click", () => sendFeedback("Needs Clarity (☁️)"));
-
-        // Handle the main comment form via AJAX
-        const form = document.getElementById('comment-form');
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const submitBtn = document.getElementById('submit-btn');
-            submitBtn.disabled = true;
-            submitBtn.classList.add('opacity-70');
-
-            const data = new FormData(form);
-            const email = getEmail();
-            const actionUrl = `https://formsubmit.co/ajax/${email}`;
-
-            try {
-                const resp = await fetch(actionUrl, {
-                    method: 'POST',
-                    body: data,
-                    headers: { 'Accept': 'application/json' }
-                });
-
-                if (resp.ok) {
-                    alert('Message sent successfully!');
-                    form.reset();
-                } else {
-                    console.warn('Form send returned non-ok status', resp.status);
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.type === "attributes" && mutation.attributeName === "class") {
+                    updateGiscusTheme();
                 }
-            } catch (err) {
-                console.error('Comment send failed', err);
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('opacity-70');
+            });
+        });
+
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ["class"]
+        });
+
+        // Ensure theme is correct once Giscus has loaded
+        window.addEventListener("message", (event) => {
+            if (event.origin !== "https://giscus.app") return;
+            if (event.data.giscus && (event.data.giscus.resize || event.data.giscus.discussion)) {
+                updateGiscusTheme();
             }
         });
     });
