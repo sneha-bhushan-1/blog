@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sneha&#39;s Tech Blog</title>
-    <link>http://localhost:1353/</link>
+    <link>http://localhost:1355/</link>
     <description>Recent content on Sneha&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Sneha Bhushan</copyright>
-    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1353/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1355/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Rise of Agentic AI in ITSM Workflows</title>
-      <link>http://localhost:1353/the-rise-of-agentic-ai-in-itsm-workflows/</link>
+      <link>http://localhost:1355/the-rise-of-agentic-ai-in-itsm-workflows/</link>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1353/the-rise-of-agentic-ai-in-itsm-workflows/</guid>
+      <guid>http://localhost:1355/the-rise-of-agentic-ai-in-itsm-workflows/</guid>
       <description>&lt;h2 class=&#34;relative group&#34;&gt;From Generative to Agentic: The New Frontier&#xA;    &lt;div id=&#34;from-generative-to-agentic-the-new-frontier&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#from-generative-to-agentic-the-new-frontier&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The landscape of IT Service Management (ITSM) is undergoing a massive transformation thanks to the integration of Agentic AI. Moving beyond simple, rule-based chatbots, modern AI systems use sophisticated machine learning and Natural Language Processing (NLP) to actively manage workflows, enhance security, and empower both end-users and IT analysts. Here is a look at how these intelligent systems are reshaping enterprise IT support.&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1353/the-rise-of-agentic-ai-in-itsm-workflows/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1355/the-rise-of-agentic-ai-in-itsm-workflows/feature.png" />
     </item>
     
     <item>
       <title>Microcopy: The Silent Bridge Between UI/UX and Documentation</title>
-      <link>http://localhost:1353/microcopy-the-silent-bridge-between-ui/ux-and-documentation/</link>
+      <link>http://localhost:1355/microcopy-the-silent-bridge-between-ui/ux-and-documentation/</link>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1353/microcopy-the-silent-bridge-between-ui/ux-and-documentation/</guid>
+      <guid>http://localhost:1355/microcopy-the-silent-bridge-between-ui/ux-and-documentation/</guid>
       <description>&lt;h2 class=&#34;relative group&#34;&gt;The Power of Small Words&#xA;    &lt;div id=&#34;the-power-of-small-words&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#the-power-of-small-words&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In the world of SaaS, we often focus on the big things: the architecture, the API integration, and the overall layout. But the most critical touchpoints between a user and a product often come down to &lt;strong&gt;microcopy&lt;/strong&gt;—those tiny snippets of text on buttons, tooltips, and error messages.&lt;/p&gt;&#xA;&lt;p&gt;As a technical writer transitioning through the lens of UI/UX, I’ve realized that microcopy is where documentation and design finally merge.&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1353/microcopy-the-silent-bridge-between-ui/ux-and-documentation/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1355/microcopy-the-silent-bridge-between-ui/ux-and-documentation/feature.png" />
     </item>
     
     <item>
       <title>Architecting Enterprise API Documentation: A Docs-as-Code Approach</title>
-      <link>http://localhost:1353/architecting-enterprise-api-documentation-a-docs-as-code-approach/</link>
+      <link>http://localhost:1355/architecting-enterprise-api-documentation-a-docs-as-code-approach/</link>
       <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1353/architecting-enterprise-api-documentation-a-docs-as-code-approach/</guid>
+      <guid>http://localhost:1355/architecting-enterprise-api-documentation-a-docs-as-code-approach/</guid>
       <description>&lt;h2 class=&#34;relative group&#34;&gt;The Blueprint for Modern API Docs&#xA;    &lt;div id=&#34;the-blueprint-for-modern-api-docs&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#the-blueprint-for-modern-api-docs&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In the enterprise SaaS landscape, an API is only as good as its documentation. When developers integrate with a tool like an ITSM platform or an AI engine, they aren&amp;rsquo;t looking for prose—they are looking for &lt;strong&gt;predictability, accuracy, and speed.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;To achieve this, we must move away from static manuals and toward a &lt;strong&gt;Docs-as-Code&lt;/strong&gt; architecture.&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1353/architecting-enterprise-api-documentation-a-docs-as-code-approach/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1355/architecting-enterprise-api-documentation-a-docs-as-code-approach/feature.png" />
     </item>
     
   </channel>
