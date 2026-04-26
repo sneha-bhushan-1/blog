@@ -17,7 +17,7 @@ The landscape of IT Service Management (ITSM) is undergoing a massive transforma
 
 Enter **Agentic AI**.
 
-Unlike standard LLMs that simply predict the next word, Agentic AI is designed to **act**. In an ITSM context, this means moving from an assistant that *tells* you how to fix a server to an agent that *executes* the fix, verifies the resolution, and closes the ticket autonomously.
+Unlike standard LLMs that simply predict the next word, Agentic AI is designed to **act**. In an ITSM context, this translates into the **capability** to move beyond a passive assistant that *tells* you how to fix a server, evolving into an agent that can **orchestrate** the fix, verify the resolution, and autonomously manage the entire ticket lifecycle.
 
 ---
 
@@ -35,17 +35,17 @@ Traditional ITSM automation (like standard workflow engines) is rigid. It follow
 ## Core Use Cases in Enterprise Workflows
 
 ### 1. Autonomous Incident Resolution
-Imagine a P2 incident regarding an application slowdown. An AI Agent can independently:
-* Query monitoring tools (like Datadog or AppDynamics).
-* Identify a memory leak in a specific container.
-* Initiate a rolling restart of the service.
-* Monitor the health for 10 minutes post-fix before notifying the human admin.
+Imagine a high-priority alert regarding a slow application. An AI Agent can independently:
+* Check performance monitoring dashboards.
+* Pinpoint the exact technical issue causing the delay.
+* Restart the affected service to restore performance.
+* Verify the system's stability for several minutes before notifying a specialist.
 
 ### 2. Intelligent IT Asset Management (ITAM)
-Agentic AI can bridge the gap between ITSM and ITAM. It can proactively identify shadow IT by scanning network logs and automatically initiate procurement or decommissioning workflows based on organizational policy.
+Agentic AI can bridge the gap between service management and asset tracking. It can proactively identify unauthorized software by scanning system logs and automatically start the process to approve or remove it based on company policy.
 
 ### 3. API-First Documentation
-As a Technical Writer, the shift to Agentic AI changes how we document. We are no longer just writing for humans; we are writing **machine-readable documentation**. For an agent to use a tool, it needs high-precision API references and structured data schemas.
+As a Technical Writer, the shift to Agentic AI changes how we document. We are no longer just writing for humans; we are writing **machine-readable documentation**. For an agent to use a tool, it needs high-precision instructions and organized data formats.
 
 ---
 
