@@ -53,7 +53,7 @@ As a Technical Writer, the shift to Agentic AI changes how we document. We are n
 
 The rise of Agentic AI does not replace the Service Desk Analyst; it upgrades them to an **Orchestrator**. 
 
-Instead of manual data entry and repetitive troubleshooting, humans will focus on defining the "Guardrails" and "Policies" that govern how these agents behave. This shift reduces the Mean Time to Resolve (MTTR) from hours to seconds.
+Instead of manual data entry and repetitive troubleshooting, humans will focus on defining the "Guardrails" and "Policies" that govern how these agents behave. This shift reduces the Mean Time to Resolve (MTTR) from hours to minutes.
 
 ---
 
