@@ -50,7 +50,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const toast = document.createElement('div');
-        toast.className = 'fixed z-[9999] flex items-center justify-center px-4 py-2 bg-neutral-900/98 backdrop-blur-2xl border border-neutral-700/50 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-2xl opacity-0 transition-all duration-300 pointer-events-none whitespace-nowrap text-center min-w-[180px]';
+        toast.className = 'fixed z-[9999] flex items-center justify-center px-4 py-2 bg-white/95 dark:bg-neutral-900/98 backdrop-blur-2xl border border-neutral-200/50 dark:border-neutral-700/50 text-neutral-900 dark:text-white text-xs font-semibold uppercase tracking-wider rounded-full shadow-2xl opacity-0 transition-all duration-300 pointer-events-none whitespace-nowrap text-center min-w-[180px]';
         toast.style.visibility = 'hidden';
         toast.innerHTML = '<div class="flex items-center justify-center gap-3 w-full"><span class="w-1.5 h-1.5 bg-violet-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)]"></span><span style="flex: 1; text-align: center;">Link Copied to Clipboard</span></div>';
         document.body.appendChild(toast);
