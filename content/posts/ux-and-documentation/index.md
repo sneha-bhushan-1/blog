@@ -55,6 +55,3 @@ When we treat microcopy as part of the documentation strategy, we create a seaml
 ## Conclusion
 
 Microcopy is the DNA of the user interface. For technical writers, it is an opportunity to guide the user without them even realizing they are being taught. By focusing on these small interactions, we build products that aren't just powerful, but intuitive.
-
----
-*Looking for more on user-centered documentation? Check out my other posts on [Agentic AI in ITSM](/posts/the-rise-of-agentic-ai-in-itsm-workflows).*
