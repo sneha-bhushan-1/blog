@@ -2,6 +2,7 @@ baseURL = "https://sneha-tech-blog.pages.dev/"
 defaultContentLanguage = "en"
 hasCJKLanguage = true
 enableEmoji = true
+enableRobotsTXT = true
 
 [pagination]
 pagerSize = 10
