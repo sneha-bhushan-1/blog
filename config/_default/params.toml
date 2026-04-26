@@ -5,6 +5,7 @@ enableSearch = true
 enableCodeCopy = true
 bitlyToken = "5ef5a2889a682e46686cb1b0dccbe11f143edde9"
 defaultSocialImage = "img/social-preview.png"
+robots = "noindex, nofollow"
 [header]
 layout = "fixed"
 

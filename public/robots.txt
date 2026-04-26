@@ -1,3 +1,5 @@
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
-Sitemap: https://sneha-tech-blog.pages.dev/sitemap.xml
+
+User-agent: *
+Disallow: /

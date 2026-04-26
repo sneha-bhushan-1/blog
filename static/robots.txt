@@ -1,2 +1,5 @@
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
+
+User-agent: *
+Disallow: /
