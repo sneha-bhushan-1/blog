@@ -3,6 +3,7 @@ defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
+bitlyToken = "YOUR_BITLY_TOKEN" # Replace with your actual Bitly Generic Access Token
 
 [header]
 layout = "fixed"

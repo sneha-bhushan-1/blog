@@ -79,14 +79,42 @@
             }, 2000);
         };
 
+        const BITLY_TOKEN = "{{ .Site.Params.bitlyToken }}";
+
+        const shortenUrl = async (longUrl) => {
+            if (!BITLY_TOKEN || BITLY_TOKEN === "YOUR_BITLY_TOKEN" || BITLY_TOKEN.includes("YOUR_BITLY_TOKEN")) {
+                return longUrl;
+            }
+            try {
+                const response = await fetch('https://api-ssl.bitly.com/v4/shorten', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${BITLY_TOKEN}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ long_url: longUrl })
+                });
+                if (!response.ok) return longUrl;
+                const data = await response.json();
+                return data.link || longUrl;
+            } catch (err) {
+                return longUrl;
+            }
+        };
+
         const shareLinks = document.querySelectorAll('a[href="#"]');
         shareLinks.forEach(link => {
             if (link.querySelector('svg') || link.innerHTML.includes('share')) {
-                link.addEventListener("click", (e) => {
+                link.addEventListener("click", async (e) => {
                     e.preventDefault();
+                    const btn = e.currentTarget;
                     const url = window.location.origin + window.location.pathname;
-                    navigator.clipboard.writeText(url).then(() => {
-                        showToast(e.currentTarget);
+                    
+                    // Show a "Processing..." state or just proceed
+                    const finalUrl = await shortenUrl(url);
+                    
+                    navigator.clipboard.writeText(finalUrl).then(() => {
+                        showToast(btn);
                     });
                 });
             }
