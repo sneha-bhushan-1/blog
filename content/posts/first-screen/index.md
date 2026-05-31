@@ -1,8 +1,8 @@
 ---
-title: "The First Screen Is the Product"
+title: "The First Screen Is the Product: The Cognitive Architecture of a Ticket Queue"
 date: 2026-05-31T13:23:48+05:30
 draft: false
-description: "Visual Cognitive Load in ITSM SaaS and Why the Ticket Queue Deserves Your Best Design Thinking."
+description: "The first screen in an ITSM SaaS product is the product. Visual Cognitive Load in ITSM SaaS and Why the Ticket Queue Deserves Your Best Design Thinking."
 tags: ["ITSM", "UX Design", "Cognitive Load", "SaaS"]
 categories: ["Design"]
 showToc: true
