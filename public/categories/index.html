@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="dark"
-  data-auto-appearance="true"><head>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="en">
@@ -28,7 +28,7 @@
     <meta name="robots" content="noindex, nofollow">
   
   
-  <link rel="canonical" href="https://sneha-tech-blog.pages.dev/categories/">
+  <link rel="canonical" href="http://localhost:1313/categories/">
   
   
     
@@ -56,7 +56,7 @@
   
 
   
-  <meta property="og:url" content="https://sneha-tech-blog.pages.dev/categories/">
+  <meta property="og:url" content="http://localhost:1313/categories/">
   <meta property="og:site_name" content="Sneha&#39;s Tech Blog">
   <meta property="og:title" content="Categories">
   <meta property="og:description" content="Exploring the intersection of technology, AI, and documentation.">
@@ -91,8 +91,8 @@
         
       
       
-        <meta name="twitter:image" content="https://sneha-tech-blog.pages.dev/img/social-preview.png">
-        <meta property="og:image" content="https://sneha-tech-blog.pages.dev/img/social-preview.png">
+        <meta name="twitter:image" content="http://localhost:1313/img/social-preview.png">
+        <meta property="og:image" content="http://localhost:1313/img/social-preview.png">
       
     
   
@@ -232,7 +232,7 @@
     "headline": "Categories",
     
     "inLanguage": "en",
-    "url" : "https://sneha-tech-blog.pages.dev/categories/",
+    "url" : "http://localhost:1313/categories/",
     "author" : {
       "@type": "Person",
       "name": "Sneha Bhushan"
@@ -253,12 +253,6 @@
 
 
   
-  
-    
-
-
-
-
   
 
   
@@ -731,40 +725,13 @@
                 }, 300);
             }, 2000);
         };
-
-        const BITLY_TOKEN = "5ef5a2889a682e46686cb1b0dccbe11f143edde9";
-
-        const shortenUrl = async (longUrl) => {
-            if (!BITLY_TOKEN || BITLY_TOKEN === "YOUR_BITLY_TOKEN" || BITLY_TOKEN.includes("YOUR_BITLY_TOKEN")) {
-                return longUrl;
-            }
-            try {
-                const response = await fetch('https://api-ssl.bitly.com/v4/shorten', {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${BITLY_TOKEN}`,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ long_url: longUrl })
-                });
-                if (!response.ok) return longUrl;
-                const data = await response.json();
-                return data.link || longUrl;
-            } catch (err) {
-                return longUrl;
-            }
-        };
-
         const shareLinks = document.querySelectorAll('a[href="#"]');
         shareLinks.forEach(link => {
             if (link.querySelector('svg') || link.innerHTML.includes('share')) {
-                link.addEventListener("click", async (e) => {
+                link.addEventListener("click", (e) => {
                     e.preventDefault();
                     const btn = e.currentTarget;
-                    const url = window.location.origin + window.location.pathname;
-                    
-                    
-                    const finalUrl = await shortenUrl(url);
+                    const finalUrl = window.location.origin + window.location.pathname;
                     
                     navigator.clipboard.writeText(finalUrl).then(() => {
                         showToast(btn);
@@ -780,7 +747,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
-  data-url="https://sneha-tech-blog.pages.dev/">
+  data-url="http://localhost:1313/">
   <div
     id="search-modal"
     class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
