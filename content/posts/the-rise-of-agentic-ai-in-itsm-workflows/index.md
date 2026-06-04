@@ -8,7 +8,6 @@ categories: ["Tech Trends"]
 showToc: true
 featureImage: "feature.png"
 showHero: true
-weight: 1
 ---
 
 ## From Generative to Agentic: The New Frontier
