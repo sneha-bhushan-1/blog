@@ -1,4 +1,4 @@
-# ✍️ Sneha Bhushan's Tech Blog
+# ✍️ Sneha's Tech Blog
 
 Welcome to the repository for my technical blog, deployed at [sneha-tech-blog.pages.dev](https://sneha-tech-blog.pages.dev/). 
 
@@ -57,7 +57,7 @@ If you would like to clone this repository and preview the site locally, follow 
 ```
 
 Connect with Me: 
-Blog: sneha-tech-blog.pages.dev
-LinkedIn: https://www.linkedin.com/in/sneha-n-bhushan/ 
+Blog: [sneha-tech-blog.pages.dev](https://sneha-tech-blog.pages.dev/) <br>
+LinkedIn: [Sneha Bhushan](https://www.linkedin.com/in/sneha-n-bhushan/)
 
 © 2026 Sneha Bhushan. All rights reserved.
