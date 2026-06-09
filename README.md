@@ -57,7 +57,8 @@ If you would like to clone this repository and preview the site locally, follow 
 ```
 
 Connect with Me: 
-Blog: [sneha-tech-blog.pages.dev](https://sneha-tech-blog.pages.dev/) <br>
-LinkedIn: [Sneha Bhushan](https://www.linkedin.com/in/sneha-n-bhushan/)
+LinkedIn: [Sneha Bhushan](https://www.linkedin.com/in/sneha-n-bhushan/) <br>
+Blog: [sneha-tech-blog.pages.dev](https://sneha-tech-blog.pages.dev/) 
 
-© 2026 Sneha Bhushan. All rights reserved.
+
+© 2026 Sneha Bhushan
