@@ -22,8 +22,7 @@ In the early days of software, every customer required their own separate house 
 
 Multi-Tenant Architecture allows multiple customers (tenants) to live in the same "apartment building" (a shared cloud environment, like a single Kubernetes cluster). They all share the same foundational infrastructure—plumbing, electricity, and security—but their individual apartments are locked off from one another.
 
-> [!TIP]
-> **Why it matters?**
+> [!NOTE]
 > A true multi-tenant setup ensures strict logical isolation. A workflow configured by Company A, or a dataset uploaded by Company B, remains completely invisible to anyone else. They share the computing power, but their configurations, transactions, and user data remain fiercely independent.
 
 ## Multi-Version Support: The Time Machine
@@ -34,8 +33,7 @@ Multi-Version Architecture solves this by allowing different versions of an appl
 
 Imagine two companies using the same enterprise platform. Company A might be perfectly happy on Version 1.3, while Company B wants the cutting-edge features of Version 1.4. In a multi-version setup, the system can route Company A to the 1.3 environment and Company B to the 1.4 environment.
 
-> [!TIP]
-> **Why it matters?**
+> [!NOTE]
 > It allows for graceful, risk-free upgrades. Customers can continue operating independently without cross-version impact. When a customer is finally upgraded, their existing records, configurations, and access seamlessly transfer over without interrupting their daily operations.
 
 ## Path-Based Routing: The Master Traffic Director
