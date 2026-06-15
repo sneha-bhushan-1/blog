@@ -1,5 +1,5 @@
 ---
-title: "The Architecture of Scale in Enterprise SaaS"
+title: "Enterprise SaaS at Scale: Systems, Strategies, and Architecture"
 date: 2026-06-10
 draft: false
 description: "Understanding Multi-Version, Multi-Tenant, and Path-Based Routing"
