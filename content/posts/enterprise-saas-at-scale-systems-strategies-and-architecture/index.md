@@ -8,6 +8,8 @@ categories: ["Technical Writing"]
 showToc: true
 featureImage: "feature.png"
 showHero: true
+aliases:
+  - /the-architecture-of-scale-in-enterprise-saas/
 ---
 
 If you have ever wondered how massive enterprise software platforms manage to serve hundreds of different companies, roll out seamless upgrades, and route complex AI features—all without the system crashing—the answer lies in modern infrastructure design.
